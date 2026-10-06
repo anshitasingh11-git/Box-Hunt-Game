@@ -1,0 +1,142 @@
+/* Page ka main body / background */
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #080B1F;
+}
+
+
+/* Main game information wrapper */
+.game-info {
+    text-align: center;
+}
+
+
+/* Game ka main heading - "Box Hunt" */
+.game-info h1 {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #F8FAFC;
+
+    text-shadow:
+        0 0 10px rgba(34, 211, 238, 0.5),
+        0 0 25px rgba(139, 92, 246, 0.4);
+}
+
+
+/* Score aur Time ko arrange karne ke liye */
+.game-start {
+    margin: 15px 0 35px;
+    font-size: 21px;
+    color: #94A3B8;
+    line-height: 1.6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Main game area jisme target box appear hoga */
+.game-container {
+    width: 450px;
+    height: 300px;
+
+    position: relative;
+    text-align: center;
+
+    background: #10162B;
+    border: 1px solid #27345A;
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 30px rgba(34, 211, 238, 0.15),
+        0 0 60px rgba(139, 92, 246, 0.10);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Anchor links ki default underline remove karne ke liye */
+a {
+    text-decoration: none;
+}
+
+/* Game target box */
+.target-box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #FF3B6B;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow:
+        0 0 10px 2px #FF3B6B;
+}
+
+/* Start Game aur Back to Home dono ki common styling */
+.game-info button,
+.game-info a {
+    display: inline-block;
+
+    width: 170px;
+    padding: 12px 20px;
+    margin: 20px 4px;
+
+    box-sizing: border-box;
+
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+/* Start Game button ka cyan/neon design */
+#start-button {
+    color: #06131A;
+    background: #22D3EE;
+    border: none;
+
+    box-shadow:
+        0 0 15px rgba(34, 211, 238, 0.6),
+        0 0 35px rgba(34, 211, 238, 0.3);
+}
+
+
+/* Back to Home link ka purple/neon design */
+.game-info a:last-of-type {
+    color: #F8FAFC;
+    background: transparent;
+    border: 2px solid #8B5CF6;
+    box-shadow:
+        0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+
+/* Start Game par mouse le jaane par hover effect */
+#start-button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 20px rgba(34, 211, 238, 0.8),
+        0 0 45px rgba(34, 211, 238, 0.4);
+}
+
+/* Back to Home par mouse le jaane par hover effect */
+.game-info a:last-of-type:hover {
+    transform: translateY(-3px);
+    background: #8B5CF6;
+    box-shadow:
+        0 0 20px rgba(139, 92, 246, 0.8),
+        0 0 45px rgba(139, 92, 246, 0.4);
+}

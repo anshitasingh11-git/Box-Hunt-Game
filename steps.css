@@ -1,0 +1,96 @@
+/* Page ka main body / background */
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #080B1F;
+}
+
+
+/* Main How to Play content box */
+.how-to-play {
+    width: 600px;
+    padding: 40px;
+
+    text-align: center;
+
+    background: #10162B;
+    border: 1px solid #27345A;
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 30px rgba(34, 211, 238, 0.15),
+        0 0 60px rgba(139, 92, 246, 0.10);
+
+    box-sizing: border-box;
+}
+/* How to Play main heading */
+.how-to-play h1 {
+    margin: 0 0 25px;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #F8FAFC;
+    text-shadow:
+        0 0 10px rgba(34, 211, 238, 0.5),
+        0 0 25px rgba(139, 92, 246, 0.4);
+}
+
+/* Back to Home button */
+.how-to-play a {
+    text-decoration: none;
+    width: 170px;
+    padding: 12px 20px;
+    margin: 20px 4px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+/* Welcome message and instruction headings */
+.how-to-play h3 {
+    margin: 20px 0 8px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: #F8FAFC;
+
+    text-shadow:
+        0 0 8px rgba(34, 211, 238, 0.4);
+}
+/* Game instructions and description text */
+.how-to-play p {
+    margin: 0 0 15px;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #94A3B8;
+}
+/* Back to Home button design */
+.how-to-play a {
+    color: #F8FAFC;
+    background: transparent;
+
+    border: 2px solid #8B5CF6;
+
+    box-shadow:
+        0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+/* Back to Home hover effect */
+.how-to-play a:hover {
+    transform: translateY(-3px);
+    background: #8B5CF6;
+
+    box-shadow:
+        0 0 20px rgba(139, 92, 246, 0.8),
+        0 0 45px rgba(139, 92, 246, 0.4);
+}
